@@ -16,5 +16,4 @@ const blogSettingSchema = mongoose.Schema({
     }
   });
 
-
 module.exports = mongoose.model('BlogSetting',blogSettingSchema);
