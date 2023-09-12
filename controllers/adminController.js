@@ -13,10 +13,6 @@ const securePassword = async(password)=>{
     }
 }
 
-const login = async(req,res)=>{
-    
-    res.send('Hii Login here ');
-}
 
 const blogSetup = async(req,res)=>{
     
@@ -72,8 +68,18 @@ const blogSetupSave = async(req,res)=>{
     }
 }
 
+const dashboard = async(req,res)=>{
+    try{
+
+        res.send("Admin dashboard");
+
+    }catch(error){
+        console.log(error.message);
+    }
+}
+
 module.exports = {
-    login,
     blogSetup,
-    blogSetupSave
+    blogSetupSave,
+    dashboard
 }
