@@ -8,13 +8,12 @@ const blogSettingSchema = mongoose.Schema({
     },
     blog_logo: {
         type: String,
-        required: true
+        required: true,
     },
     description: {
         type: String,
-        required: true
+        required: true,
     }
   });
-
 
 module.exports = mongoose.model('BlogSetting',blogSettingSchema);
